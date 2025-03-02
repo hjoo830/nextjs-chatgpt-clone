@@ -8,7 +8,7 @@ type Props = {
 
 export function Message({ name = 'User', content = '', role }: Props) {
   const isAssistant = role === 'assistant';
-  const avatarName = isAssistant ? 'Chat GPT' : name;
+  const avatarName = isAssistant ? 'Chat HHJ' : name;
   return (
     <div className="flex items-start gap-2 mb-5">
       <Avatar>
