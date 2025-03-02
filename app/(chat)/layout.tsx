@@ -1,4 +1,5 @@
-import { Sidebar } from '../../components/chat/Sidebar';
+import { Header } from '@/components/chat/Header';
+import { Sidebar } from '@/components/chat/Sidebar';
 
 export default function ChatLayout({
   children,
@@ -10,7 +11,10 @@ export default function ChatLayout({
       <div className="hidden md:block w-[300px]">
         <Sidebar />
       </div>
-      <div>{children}</div>
+      <div className="flex flex-col flex-1 h-full">
+        <Header />
+        {children}
+      </div>
     </div>
   );
 }
