@@ -17,7 +17,7 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
     };
 
     setUser();
-  }, []);
+  }, [updateUser]);
 
   return <>{children}</>;
 }

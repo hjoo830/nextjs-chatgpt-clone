@@ -7,7 +7,7 @@ import db from '@/db';
 import { user } from '@/db/schema';
 import { redirect } from 'next/navigation';
 
-export const signUp = async (_: any, formData: FormData) => {
+export const signUp = async (_: unknown, formData: FormData) => {
   const validatedFields = SignUpSchema.safeParse({
     name: formData.get('name'),
     email: formData.get('email'),

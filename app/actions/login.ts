@@ -6,7 +6,7 @@ import { LoginSchema } from '../schemas/auth';
 import { createSession } from './sessions';
 import { redirect } from 'next/navigation';
 
-export const login = async (_: any, formData: FormData) => {
+export const login = async (_: unknown, formData: FormData) => {
   const validatedFields = LoginSchema.safeParse({
     email: formData.get('email'),
     password: formData.get('password'),
